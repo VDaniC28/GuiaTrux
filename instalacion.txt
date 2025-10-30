@@ -1,0 +1,12 @@
+import os
+# Genera una cadena aleatoria de 24 bytes codificada en base64
+print(os.urandom(24).hex())
+
+py -3.10 -m venv venv
+.\venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+
+streamlit run app.py
+
+http://localhost:8501/
